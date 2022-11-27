@@ -59,3 +59,13 @@ console.log(result);
     }
     return acc;
 }, []);
+
+[ [9,2], [8,7] ].reduce((acc, val) => [ ...acc, ...val ], []) // [9, 2, 8, 7]
+
+
+var address = ["경기도", "안양시", "만안구"];
+ 
+var addressResult = arr.reduceRight((acc, element) => address + " " + element);
+ 
+console.log(result); //  만안구 안양시 경기도
+console.log(typeof addressResult); // string
